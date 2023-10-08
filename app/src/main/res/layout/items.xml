@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="134dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ScoreTxt"
+        app:srcCompat="@drawable/nasa"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/timeTxtR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="156dp"
+        android:text="20 min"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pic"
+        app:layout_constraintTop_toBottomOf="@+id/titleTxt"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/titleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="168dp"
+        android:justificationMode="inter_word"
+        android:text="title"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pic"
+        app:layout_constraintTop_toBottomOf="@+id/ScoreTxt"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/ScoreTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="200dp"
+        android:justificationMode="inter_word"
+        android:text="Fecha"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
